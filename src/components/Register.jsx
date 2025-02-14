@@ -19,6 +19,11 @@ const Register = () => {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleRegistration(data);
+  };
+
   return (
     <div className="register">
       <Logo title={"CryptoDucks"} />
